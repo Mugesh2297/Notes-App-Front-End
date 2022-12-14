@@ -5,6 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import Login from "./LoginComponent/Login";
+import Register from "./RegisterComponent/Register";
 
  
  function RouterComponent() {
@@ -13,6 +14,7 @@ import Login from "./LoginComponent/Login";
     <BrowserRouter>
     <Routes>
         <Route path="/" element={<Login/>}/>
+        <Route path="/register" element={<Register/>}/>
     </Routes>
     </BrowserRouter>
     </>

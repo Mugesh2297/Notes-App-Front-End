@@ -1,14 +1,14 @@
 import React from 'react';
 import "./login.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NotesImage from './notes.jpeg';
 import 'animate.css';
+import {  NavLink } from 'react-router-dom';
 
 
 function Login() {
   return (
     <div>
-      <section className='login py-5'>
+      <section className='login py-5 main'>
         <div className='col-lg-12 col-md-12 col-sm-12 col-12 text-center'>
           <h1 className='animate__animated animate__heartBeat title'>Notes App</h1>
         </div>
@@ -29,13 +29,13 @@ function Login() {
                 </div>
                 <div className='form-row py-4' >
                   <div className='offset-1 col-lg-10'>
-                    <button className="btn1" type="submit" >Signup</button>
+                    <button className="btn1" type="submit" >Signin</button>
                   </div>
                 </div>
               </form>
               <div>
-                <p className='text-center'>Don't have a account signup?</p>
-                <p className='text-center'>Forget Password?</p>
+               <NavLink  to="/register" className='nav_link text-center'> <p className='text-center'>Don't have a account signup?</p></NavLink>
+                <NavLink className='nav_link text-center'><p className='text-center'>Forget Password?</p></NavLink>
               </div>
             </div>
           </div>
