@@ -120,7 +120,12 @@ p:hover{
         height: auto;
        }
        .loginElement{
-        width: 450px;
+        width: 400px;
+    }
+    .loginTitle{
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
     }
      }
      @media screen and (max-width: 350px){
