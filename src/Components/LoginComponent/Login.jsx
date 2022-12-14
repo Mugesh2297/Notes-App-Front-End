@@ -14,7 +14,7 @@ function Login() {
         </div>
         <div className='container py-5 mx-auto mt-4 loginElement '>
           <div className='row g-0 '>
-            <div className='col-lg-12 col-md-12 col-sm-12 col-12 text-center py-5 '>
+            <div className='col-lg-12 col-md-8 col-sm-6 col-12 text-center py-5 '>
               <h1 className='animate__animated animate__heartBeat loginTitle'>Welcome Back</h1>
               <form>
                 <div className='form-row  pt-3'>
