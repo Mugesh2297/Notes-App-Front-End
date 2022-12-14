@@ -17,17 +17,17 @@ function Login() {
             <div className=' col-lg-12 col-md-12 col-sm-12 col-12 text-center py-5 '>
               <h1 className='animate__animated animate__heartBeat loginTitle'>Welcome Back</h1>
               <form>
-                <div className='form-row  pt-3'>
+                <div className='form-row  pt-3 text-center'>
                   <div className='offset-1 col-lg-10'>
                     <input type="email" className='inp my-3 px-3' placeholder='email'></input>
                   </div>
                 </div>
-                <div className='form-row pt-3'>
+                <div className='form-row pt-3 text-center'>
                   <div className='offset-1 col-lg-10'>
                     <input type="password" className='inp px-3' placeholder='password'></input>
                   </div>
                 </div>
-                <div className='form-row py-4'>
+                <div className='form-row py-4' >
                   <div className='offset-1 col-lg-10'>
                     <button className="btn1" type="submit" >Signup</button>
                   </div>
