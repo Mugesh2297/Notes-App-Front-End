@@ -4,6 +4,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Forget from "./ForgetPassword/Forget";
 import Login from "./LoginComponent/Login";
 import Register from "./RegisterComponent/Register";
 
@@ -15,6 +16,7 @@ import Register from "./RegisterComponent/Register";
     <Routes>
         <Route path="/" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
+        <Route path="/forget" element={<Forget/>}/>
     </Routes>
     </BrowserRouter>
     </>

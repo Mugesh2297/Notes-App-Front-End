@@ -35,7 +35,7 @@ function Login() {
               </form>
               <div>
                <NavLink  to="/register" className='nav_link text-center'> <p className='text-center'>Don't have a account signup?</p></NavLink>
-                <NavLink className='nav_link text-center'><p className='text-center'>Forget Password?</p></NavLink>
+                <NavLink to="/forget" className='nav_link text-center'><p className='text-center'>Forget Password?</p></NavLink>
               </div>
             </div>
           </div>

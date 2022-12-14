@@ -42,7 +42,7 @@ function Register() {
             </form>
             <div>
               <NavLink to="/" className="nav_link"><p className='text-center'>Have a account sigin?</p></NavLink>
-              <NavLink className="nav_link"><p className='text-center'>Forget Password?</p></NavLink>
+              <NavLink to="/forget" className="nav_link"><p className='text-center'>Forget Password?</p></NavLink>
             </div>
           </div>
         </div>

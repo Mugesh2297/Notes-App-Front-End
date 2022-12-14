@@ -45,7 +45,9 @@
 font-family: 'Poppins', sans-serif;
 
 }
-
+.inp:focus{
+    outline:  solid rgb(176, 157, 212);
+}
 
 .btn1{
     height: 50px;
