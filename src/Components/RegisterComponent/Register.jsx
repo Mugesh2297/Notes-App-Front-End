@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import "./register.css";
 
 function Register() {
@@ -40,8 +41,8 @@ function Register() {
               </div>
             </form>
             <div>
-              <p className='text-center'>Have a account sigin?</p>
-              <p className='text-center'>Forget Password?</p>
+              <NavLink to="/" className="nav_link"><p className='text-center'>Have a account sigin?</p></NavLink>
+              <NavLink className="nav_link"><p className='text-center'>Forget Password?</p></NavLink>
             </div>
           </div>
         </div>
