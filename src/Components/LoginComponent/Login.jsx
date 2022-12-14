@@ -12,9 +12,9 @@ function Login() {
         <div className='col-lg-12 col-md-12 col-sm-12 col-12 text-center'>
           <h1 className='animate__animated animate__heartBeat title'>Notes App</h1>
         </div>
-        <div className='container col-lg-12 col-md-12 col-sm-12 col-12 py-5 mx-auto mt-4 loginElement '>
+        <div className='container  py-5 mx-auto mt-4  '>
           <div className='row '>
-            <div className=' text-center py-5 '>
+            <div className=' col-lg-12 col-md-12 col-sm-12 col-12 text-center py-5 '>
               <h1 className='animate__animated animate__heartBeat loginTitle'>Welcome Back</h1>
               <form>
                 <div className='form-row  pt-3'>
