@@ -7,6 +7,9 @@ import {
 import Forget from "./ForgetPassword/Forget";
 import Login from "./LoginComponent/Login";
 import Register from "./RegisterComponent/Register";
+import Home from "./Home/Home";
+import ActivateEmail from "./ActivateComponent/ActivateEmail";
+
 
  
  function RouterComponent() {
@@ -17,6 +20,8 @@ import Register from "./RegisterComponent/Register";
         <Route path="/" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
         <Route path="/forget" element={<Forget/>}/>
+        <Route path="/activate" element={<ActivateEmail/>}/>
+        <Route path="/home" element={<Home/>}/>
     </Routes>
     </BrowserRouter>
     </>
