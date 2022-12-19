@@ -52,7 +52,7 @@ function Login() {
       }
   })
   return (
-    <div className='head'>
+    
     <div>
       <section className='login py-5 main'>
         <div className='col-lg-12 col-md-12 col-sm-12 col-12 text-center'>
@@ -93,7 +93,7 @@ function Login() {
         </div>
       </section>
     </div>
-    </div>
+   
   )
 }
 
