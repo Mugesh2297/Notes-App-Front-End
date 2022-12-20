@@ -1,8 +1,48 @@
+import axios from 'axios';
+import { useFormik } from 'formik';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 
 function Forget() {
+  const navigate = useNavigate();
+  const formik = useFormik({
+    initialValues: {
+        
+        email: "",
+       
+       
+    },  
+    validate: (values) => {
+        let errors = {};
+       
+        if (values.email === "") {
+            errors.email = "Please Enter Email Id"
+        }
+        
+       
+
+        return errors;
+    },
+    onSubmit: async (values) => {
+        try {
+            var response = await axios.post("https://notes-app-61uo.onrender.com/register/resetpassword", values);
+          console.log(response)
+         if(response.status===200){
+            Swal.fire({ title:"Email sent to the mail",  icon: 'success', confirmButtonText: 'Okay'});
+          navigate("/")
+         }
+        }
+        catch (err) {
+            console.log(err.response);
+            Swal.fire({ title:err.response.data.message,  icon: 'error', confirmButtonText: 'Okay'});
+           
+        }
+    }
+
+
+})
   return (
     <div>
     <section className='login py-5 main'>
@@ -13,11 +53,13 @@ function Forget() {
         <div className='row '>
           <div className=' col-lg-12 col-md-12 col-sm-12 col-12 text-center py-3 '>
             <h1 className='animate__animated animate__heartBeat loginTitle'>Reset Password</h1>
-            <form>
+            <form onSubmit={formik.handleSubmit}>
               <div className='form-row  pt-2 text-center'>
                 <div className='offset-1 col-lg-10'>
-                  <input type="email" className='inp my-3 px-3' placeholder='Enter your registered email '></input>
+                  <input type="email" className='inp my-3 px-3' placeholder='Enter your registered email'
+                  name="email" value={formik.values.email} onChange={formik.handleChange}></input>
                 </div>
+                <div><span className="resetPasserr" style={{ color: 'red' }}>{formik.errors.email}</span></div>
               </div>
               <div className='form-row py-3' >
                 <div className='offset-1 col-lg-10'>

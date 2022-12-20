@@ -9,6 +9,7 @@ import Login from "./LoginComponent/Login";
 import Register from "./RegisterComponent/Register";
 import Home from "./Home/Home";
 import ActivateEmail from "./ActivateComponent/ActivateEmail";
+import UpdatePassword from "./UpdatePassword/UpdatePassword";
 
 
  
@@ -21,6 +22,7 @@ import ActivateEmail from "./ActivateComponent/ActivateEmail";
         <Route path="/register" element={<Register/>}/>
         <Route path="/forget" element={<Forget/>}/>
         <Route path="/activate" element={<ActivateEmail/>}/>
+        <Route path="/resetpass/:id" element={<UpdatePassword/>}/>
         <Route path="/home" element={<Home/>}/>
     </Routes>
     </BrowserRouter>
