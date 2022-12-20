@@ -30,7 +30,7 @@ function Login() {
 
       onSubmit: async (values) => {
           try {
-              var response = await axios.post("https://notesapp-back-ktxwda001-mugesh2297.vercel.app/register/signin", values);
+              var response = await axios.post("https://notes-app-61uo.onrender.com/register/signin", values);
               console.log(response)
               localStorage.setItem("token", response.data);
               navigate("/home");

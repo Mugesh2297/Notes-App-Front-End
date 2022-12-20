@@ -44,7 +44,7 @@ function Register() {
                 minUppercase: 1, minNumbers: 1, minSymbols: 1
               })) {
                 try {
-                    var response = await axios.post("https://notesapp-back-ktxwda001-mugesh2297.vercel.app/register/signup", values);
+                    var response = await axios.post("https://notes-app-61uo.onrender.com/register/signup", values);
                     localStorage.setItem("token", response.data);
                   if(response.data.code === "newUseradded")  {
                     Swal.fire({ title: response.data.message,  icon: 'success', confirmButtonText: 'Login'});
