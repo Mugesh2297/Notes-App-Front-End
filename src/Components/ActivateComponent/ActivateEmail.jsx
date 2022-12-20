@@ -64,7 +64,7 @@ function ActivateEmail() {
             <form onSubmit={formik.handleSubmit}>
               <div className='form-row  pt-2 text-center'>
                 <div className='offset-1 col-lg-10'>
-                  <input type="email" className='inp my-3 px-3' placeholder='Enter your registered email' name="eamil"
+                  <input type="email" className='inp my-3 px-3' placeholder='Enter your registered email' name="email"
                   value={formik.values.email} onChange={formik.handleChange}></input>
                 </div>
                 <div><span className="activeEmail" style={{ color: 'red' }}>{formik.errors.email}</span></div>
