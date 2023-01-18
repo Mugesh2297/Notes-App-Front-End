@@ -32,7 +32,9 @@ function Login() {
           try {
               var response = await axios.post("https://notes-app-61uo.onrender.com/register/signin", values);
               console.log(response)
-              localStorage.setItem("token", response.data);
+              window.localStorage.setItem("token", response.data.token);
+              window.localStorage.setItem("name", response.data.existUser.name);
+              window.localStorage.setItem("email", response.data.existUser.email);
               navigate("/home");
 
 
