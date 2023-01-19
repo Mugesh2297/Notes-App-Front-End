@@ -10,7 +10,7 @@ import 'animate.css';
 
 function CreateNotes() {
   return (
-    <div className='main'>
+    <div className='main1'>
        <Navbar></Navbar>
        <div >
        <div className='formArea animate__animated animate__backInDown'>
