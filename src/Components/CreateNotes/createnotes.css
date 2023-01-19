@@ -54,6 +54,49 @@ font-family: 'Poppins', sans-serif;
     outline:  solid rgb(246, 149, 231);
  }
 
+
+ @media (max-width: 992px){
+    .formArea{
+        height: auto;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+        border-radius: 30px;
+        box-shadow: 12px 12px 22px;
+        margin: auto;
+        margin-top: 100px;
+        width: 60%;
+        padding: 25px;
+    
+    }
+    .formfield{
+        width: 300px;
+        box-shadow: 1px 1px 14px 1px rgba(0,0,0,0.42);
+        -webkit-box-shadow: 1px 1px 14px 1px rgba(0,0,0,0.42);
+        -moz-box-shadow: 1px 1px 14px 1px rgba(0,0,0,0.42);
+        font-family: 'Poppins', sans-serif;
+     }
+
+     .formfield:focus{
+        outline:  solid rgb(176, 157, 212);
+     }
+     .createNoteButton{
+        height: 50px;
+        width: 50%;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        font-size: 15px;
+        font-weight: bold;
+        box-shadow: 12px 12px 22px;
+     }
+ }
  @media (max-width: 768px) {
     .formArea{
         height: auto;
@@ -95,5 +138,92 @@ font-family: 'Poppins', sans-serif;
         font-weight: bold;
         box-shadow: 12px 12px 22px;
      }
+  }
+
+  @media screen and (max-width: 576px){
+    .formArea{
+        height: auto;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+        border-radius: 30px;
+        box-shadow: 12px 12px 22px;
+        margin: auto;
+        margin-top: 100px;
+        width: 80%;
+        padding: 25px;
+    
+    }
+    .formfield{
+        width: 200px;
+        box-shadow: 1px 1px 14px 1px rgba(0,0,0,0.42);
+        -webkit-box-shadow: 1px 1px 14px 1px rgba(0,0,0,0.42);
+        -moz-box-shadow: 1px 1px 14px 1px rgba(0,0,0,0.42);
+        font-family: 'Poppins', sans-serif;
+     }
+
+     .formfield:focus{
+        outline:  solid rgb(176, 157, 212);
+     }
+     .createNoteButton{
+        height: 50px;
+        width: 60%;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        font-size: 15px;
+        font-weight: bold;
+        box-shadow: 12px 12px 22px;
+     }
+  }
+
+  @media screen and (max-width: 350px){
+    .formArea{
+        height: auto;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+        border-radius: 30px;
+        box-shadow: 12px 12px 22px;
+        margin: auto;
+        margin-top: 100px;
+        width: 80%;
+        padding: 25px;
+    
+    }
+    .formfield{
+        width: 200px;
+        box-shadow: 1px 1px 14px 1px rgba(0,0,0,0.42);
+        -webkit-box-shadow: 1px 1px 14px 1px rgba(0,0,0,0.42);
+        -moz-box-shadow: 1px 1px 14px 1px rgba(0,0,0,0.42);
+        font-family: 'Poppins', sans-serif;
+     }
+
+     .formfield:focus{
+        outline:  solid rgb(176, 157, 212);
+     }
+     .createNoteButton{
+        height: 50px;
+        width: 80%;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        font-size: 15px;
+        font-weight: bold;
+        box-shadow: 12px 12px 22px;
+     }  
+       
   }
   
