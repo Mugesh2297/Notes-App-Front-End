@@ -35,7 +35,7 @@ function UpdatePassword() {
                 minUppercase: 1, minNumbers: 1, minSymbols: 1
               })) {
                 try {
-                    var response =  await axios.post(`https://notes-app-61uo.onrender.com/register/reset-password-page/${test.id}`, values);
+                    var response =  await axios.post(`https://notesapp-back-end.vercel.app/register/reset-password-page/${test.id}`, values);
                  console.log(response);
                  if(response.status===200){
                     Swal.fire({ title: response.data.message,  icon: 'success', confirmButtonText: 'okay'});
@@ -66,7 +66,7 @@ function UpdatePassword() {
       <div className='col-lg-12 col-md-12 col-sm-12 col-12 text-center'>
         <h1 className='animate__animated animate__heartBeat title'>Notes App</h1>
       </div>
-      <div className='container  py-5 mx-auto mt-4  '>
+      <div className='container  py-5 mx-auto mt-4  resetContainer'>
         <div className='row '>
           <div className=' col-lg-12 col-md-12 col-sm-12 col-12 text-center py-3 '>
             <h1 className='animate__animated animate__heartBeat update'>Update Password</h1>

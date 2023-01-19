@@ -44,7 +44,7 @@ function Register() {
                 minUppercase: 1, minNumbers: 1, minSymbols: 1
               })) {
                 try {
-                    var response = await axios.post("https://notes-app-61uo.onrender.com/register/signup", values);
+                    var response = await axios.post("https://notesapp-back-end.vercel.app/register/signup", values);
                     localStorage.setItem("token", response.data);
                   if(response.data.code === "newUseradded")  {
                     Swal.fire({ title: response.data.message,  icon: 'success', confirmButtonText: 'Login'});
@@ -80,7 +80,7 @@ function Register() {
         <h1 className='animate__animated animate__heartBeat title'>Notes App</h1>
       </div> */}
       <div className='container  py-2 mx-auto mt-1 registerComponent'>
-        <div className='row '>
+        <div className='row registerRow'>
           <div className=' col-lg-12 col-md-12 col-sm-12 col-12 text-center py-5 '>
             <h1 className='animate__animated animate__heartBeat loginTitle'>Register Here...</h1>
             <form onSubmit={formik.handleSubmit}>

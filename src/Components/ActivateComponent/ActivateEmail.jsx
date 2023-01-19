@@ -24,7 +24,7 @@ function ActivateEmail() {
 
         onSubmit: async (values) => {
             try {
-                var response = await axios.post("https://notes-app-61uo.onrender.com/register/activate-account", values);
+                var response = await axios.post("https://notesapp-back-end.vercel.app/register/activate-account", values);
                 console.log(response);
                 
                 if(response.status === 200){

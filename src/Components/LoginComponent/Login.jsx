@@ -30,7 +30,7 @@ function Login() {
 
       onSubmit: async (values) => {
           try {
-              var response = await axios.post("https://notes-app-61uo.onrender.com/register/signin", values);
+              var response = await axios.post("https://notesapp-back-end.vercel.app/register/signin", values);
               console.log(response)
               window.localStorage.setItem("token", response.data.token);
               window.localStorage.setItem("name", response.data.existUser.name);
@@ -60,8 +60,8 @@ function Login() {
         <div className='col-lg-12 col-md-12 col-sm-12 col-12 text-center'>
           <h1 className='animate__animated animate__heartBeat title'>Notes App</h1>
         </div>
-        <div className='container  py-5 mx-auto mt-4  '>
-          <div className='row '>
+        <div className='container loginContainer py-5 mx-auto mt-4  '>
+          <div className='row loginrow'>
             <div className=' col-lg-12 col-md-12 col-sm-12 col-12 text-center py-5 '>
               <h1 className='animate__animated animate__heartBeat loginTitle'>Welcome Back</h1>
               <form onSubmit={formik.handleSubmit}>

@@ -10,7 +10,7 @@
     color:black;
     text-decoration: none;
 }
-.row{
+.loginrow{
     background: rgb(244, 243, 243);
     border-radius: 30px;
     box-shadow: 12px 12px 22px;
@@ -98,7 +98,7 @@ p:hover{
 }
 
 
-.container{
+.loginContainer{
     width: 30%;
     /* height: 80vh; */
    
@@ -126,7 +126,7 @@ span{
         margin-left: 20px;
        
     } */
-    .container{
+    .loginContainer{
         width: 75%;
     }
     .inp{
@@ -166,7 +166,7 @@ span{
             height:100%;
             width: 100%;
         }
-        .container{
+        .loginContainer{
             width: 85%;
             text-align: center;
         }
@@ -196,7 +196,7 @@ p{
      }
      
      @media screen and (max-width: 576px){
-       .container{
+       .loginContainer{
         height: auto;
        }
      
