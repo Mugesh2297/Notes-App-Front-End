@@ -1,26 +1,51 @@
 .cardsDesign{
     box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 30px -20px;
-    background: #654ea3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background-color: #F3E779;
 }
 
 .homebody{
     height: 120vh;
     width: 100%;
-    background-color: aliceblue;
+    background-color: rgb(95, 95, 95);
 }
 .cardsBody{
     justify-content: center;
 }
 
 .cardTitle{
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     text-decoration: underline;
 }
 
 .edit{
-    color:white
+    color:rgb(4, 4, 4)
+}
+
+.headingNotes{
+    color:white;
+}
+.trashIcon{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.trashIcon:hover{
+    color:#ff0000;
+    transition: 5ms;
+    transform: scale(1.2);
+}
+
+.editIcon{
+    color: rgb(104, 62, 255);
+    font-weight: bold;
+    font-size: px;
+}
+
+.editIcon:hover{
+    color:#ff7b00;
+    transition: 5ms;
+    transform: scale(1.2);
 }

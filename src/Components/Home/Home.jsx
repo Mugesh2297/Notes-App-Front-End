@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { format } from 'timeago.js';
 import Navbar from '../NavbarComponent/Navbar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 import './home.css';
 import 'animate.css';
 
@@ -39,7 +41,7 @@ function Home() {
             }
           });
         console.log(response)
-        Swal.fire({ title: 'Notes Deleted Successfully', icon: 'success', confirmButtonText: 'okay' });
+        Swal.fire({ title: 'Note Deleted Successfully', icon: 'success', confirmButtonText: 'okay' });
         loadData()
       }
     } catch (error) {
@@ -53,7 +55,7 @@ function Home() {
     <div className='homebody'>
       <Navbar></Navbar>
       <div >
-      <h1 className=' text-center mt-5'>Notes</h1>
+      <h1 className=' text-center mt-5 headingNotes'>Notes</h1>
       <div className="container p-5 cardsBody animate__animated animate__backInDown">
       <div className="row">
         {user.map((note) => {
@@ -73,17 +75,19 @@ function Home() {
                 </div>
                 
                 <p className="text-end px-3" >
-                  <span className='edit'>Last Edited:</span> {format(note.updatedAt)}
+                  
                 </p>
-                <div className="card-footer bg-transparent d-flex justify-content-around border-none text-uppercase">
-                  {note.name}
+                <div className="card-footer bg-transparent d-flex justify-content-around border-none">
+                 Edited: {format(note.updatedAt)}
 
-                  <Link to={`/portal/edit/${note._id}`} className="text-light ">
-                    Edit
+                  <Link to={`/editnotes/${note._id}`} className="text-light ">
+                  <FontAwesomeIcon icon={faEdit} className="editIcon">Edit</FontAwesomeIcon> 
                   </Link>
                 </div>
-                <button className="bg-transparent btn btn-outline-none text-light position-absolute top-0 end-0" >
-                  X
+                <button onClick={() => deleteProduct(note._id)} className="bg-transparent btn btn-outline-none text-light position-absolute top-0 end-0" >
+                <FontAwesomeIcon icon={faTrash} className="trashIcon"></FontAwesomeIcon>
+                
+
                 </button>
               </div>
             </div>

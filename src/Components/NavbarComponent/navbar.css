@@ -71,11 +71,25 @@ button {
   font-weight: bold;
   font-size: 2rem;
 }
-.nav-links li:hover{
-  color: rgb(252, 252, 252);
-  text-decoration: underline;
-  text-decoration-color: rgb(239, 178, 231);
-  text-decoration-thickness: 4px;
+.nav_link{
+  color: white;
+  font-weight: 500;
+  transition: .3s;
+  text-decoration: none;
+  margin: 5px;
+  font-size: 18px;
+}
+
+.nav_link:hover{
+  color: orange;
+}
+
+.nav_link:active{
+  color: orange;
+}
+
+.active{
+  color: orange;
 }
 @media (max-width: 768px) {
   .logo {

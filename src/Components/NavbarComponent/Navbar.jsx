@@ -1,11 +1,13 @@
 import React, { useState } from "react"
 import "./navbar.css";
 import 'animate.css';
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const Navbar = () => {
-  const [Mobile, setMobile] = useState(false)
+  const [Mobile, setMobile] = useState(false);
+  
   return (
     <>
       
@@ -16,15 +18,15 @@ const Navbar = () => {
         if mobile screen ma xa bhane nav-links-mobile add huxa
         */}
           <ul className={Mobile ? "nav-links-mobile" : "nav-links animate__animated animate__heartBeat"} onClick={() => setMobile(false)}>
-            <Link to='/home' className='home'>
+            <NavLink to='/home' activeClassName="active" className='nav_link'>
               <li>Home</li>
-            </Link>
-            <Link to='/createNotes' className='about'>
+            </NavLink>
+            <NavLink to='/createNotes' activeClassName="active" className='nav_link'>
               <li>Create New Notes</li>
-            </Link>
-            <Link to='/services' className='services'>
+            </NavLink>
+            <NavLink to='/services' activeClassName="active" className='nav_link'>
               <li>Profile</li>
-            </Link>
+            </NavLink>
 
           </ul>
           {/* 
