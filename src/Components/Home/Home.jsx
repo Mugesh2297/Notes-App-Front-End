@@ -52,8 +52,12 @@ function Home() {
     }
   }
   return (
-    <div className='homebody'>
+    
+       <div> 
+         <div className='homebody'>
+          <div>   
       <Navbar></Navbar>
+      </div>
       <div >
       <h1 className=' text-center mt-5 headingNotes'>Notes</h1>
       <div className="container p-5 cardsBody animate__animated animate__backInDown">
@@ -94,6 +98,7 @@ function Home() {
           );
         })}
       </div>
+    </div>
     </div>
     </div>
     </div>
