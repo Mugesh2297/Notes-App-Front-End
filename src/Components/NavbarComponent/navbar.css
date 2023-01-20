@@ -80,6 +80,8 @@ nav ul li a:hover::after{
   height: 55px;
   width: 55px;
 }
+
+
 @media screen and (max-width: 992px){
   .imageCircle{
     height: 82px;
