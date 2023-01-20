@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { format } from 'timeago.js';
 import Navbar from '../NavbarComponent/Navbar';
@@ -8,11 +8,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 import './home.css';
 import 'animate.css';
+import Load from "./Load.json";
+import Lottie from "lottie-react";
+
 
 
 
 
 function Home() {
+  const navigate = useNavigate();
+
+  if (!localStorage.getItem("token")) {
+    Swal.fire({ title: "Session Expired, Please Login to continue", icon: 'error', confirmButtonText: 'okay' });
+    navigate("/");
+  }
   const [user, setUsers] = useState([]);
   const [isLoading, setLoading] = useState(false);
   useEffect(() => {
@@ -58,7 +67,8 @@ function Home() {
           <div>   
       <Navbar></Navbar>
       </div>
-      <div >
+    {
+      isLoading ? <div ><Lottie className='lottie' animationData={Load}/></div>:  <div >
       <h1 className=' text-center mt-5 headingNotes'>Notes</h1>
       <div className="container p-5 cardsBody animate__animated animate__backInDown">
       <div className="row">
@@ -100,6 +110,7 @@ function Home() {
       </div>
     </div>
     </div>
+    }
     </div>
     </div>
   )

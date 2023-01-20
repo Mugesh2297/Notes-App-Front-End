@@ -12,6 +12,7 @@ import ActivateEmail from "./ActivateComponent/ActivateEmail";
 import UpdatePassword from "./UpdatePassword/UpdatePassword";
 import CreateNotes from "./CreateNotes/CreateNotes";
 import EditNotes from "./EditNotesComponent/EditNotes";
+import ProfileComponent from "./ProfileComponent/ProfileComponent";
 
 
  
@@ -28,6 +29,7 @@ import EditNotes from "./EditNotesComponent/EditNotes";
         <Route path="/home" element={<Home/>}/>
         <Route path="/createNotes" element={<CreateNotes/>}/>
         <Route path="/editnotes/:id" element={<EditNotes/>}/>
+        <Route path="/profile" element={<ProfileComponent/>}/>
     </Routes>
     </BrowserRouter>
     </>

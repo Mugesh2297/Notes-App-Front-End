@@ -4,7 +4,7 @@
 }
 
 .homebody{
-    height: 120vh;
+    height: 100vh;
     width: 100%;
     background: #bdc3c7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
@@ -51,4 +51,19 @@
     color:#ff7b00;
     transition: 5ms;
     transform: scale(1.2);
+}
+
+.lottie{
+  height:550px;
+  width: auto;
+  margin-top: 0;
+
+
+}
+
+@media screen and (max-width: 992px){
+    .homebody{
+        height: auto;
+        width: auto;
+    }
 }

@@ -1,12 +1,25 @@
 import React from "react";
 
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import "./navbar.css";
 
 
 function Navbar() {
 
-  let name = window.localStorage.getItem("name")
+  let name = window.localStorage.getItem("name");
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    let ask = window.confirm("Are You Sure Want to logout?");
+    if(ask){
+      console.log("Came")
+      localStorage.removeItem("token");
+      localStorage.removeItem("name");
+      localStorage.removeItem("email");
+      navigate("/")
+    }
+    
+}
  
   return (
     <>
@@ -68,12 +81,12 @@ function Navbar() {
                   aria-labelledby="navbarDarkDropdownMenuLink"
                 >
                   <li>
-                    <Link className="dropdown-item" to="/portal/profile">
+                    <Link className="dropdown-item" to="/profile">
                      {name}
                     </Link>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" to={"/"}>
+                    <NavLink className="dropdown-item" to={"/"} onClick={handleLogout}>
                       Logout
                     </NavLink>
                   </li>
