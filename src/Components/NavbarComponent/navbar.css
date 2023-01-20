@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .mynav{
   
-  background-color: #8c31f5 !important;
+  /* background-color: #8c31f5 !important; */
   box-shadow: 0px 0px 16px 1px rgba(23, 15, 29, 0.75) inset;
   -webkit-box-shadow: 0px 0px 16px 1px rgba(90, 56, 87, 0.75) inset;
   -moz-box-shadow: 0px 0px 16px 1px rgba(47, 37, 59, 0.75) inset !important;
@@ -16,11 +19,19 @@
   
 } */
 .nav-link{
-  color: #fff !important;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 22px;
 }
-.navbar-brand{
-  color: #fff !important;
+.notesTitleNav{
+  font-family: 'Pacifico', cursive;
+  font-size:50px;
+  color: rgb(223, 223, 223);
 }
+.link{
+  text-decoration: none;
+}
+
 
 #navBut{
   background-color:#fff;
@@ -35,6 +46,7 @@ nav ul li{
   font-size: 25px;
 margin:10px 20px;
 font-weight: 800;
+
 }
 nav ul li a{
   color: #fff;
@@ -46,17 +58,32 @@ nav ul li a::after{
   width:0%;
   height: 4px;
   border-radius: 1rem;
-  background:rgb(0, 12, 39);
+  background:rgb(241, 179, 232);
   position: absolute;
   left:0;
   bottom: -3%;
+  color:rgb(241, 179, 232)
   
 }
 nav ul li a:hover::after{
   width: 95%;
   transition: 0.5s;
+  color:rgb(0, 0, 0);
 }
 
 .navbar{
   background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+
+.imageCircle{
+  height: 55px;
+  width: 55px;
+}
+@media screen and (max-width: 992px){
+  .imageCircle{
+    height: 82px;
+    width: 70px;
+  }
+
 }

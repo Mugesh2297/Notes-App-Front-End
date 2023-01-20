@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
 
 
@@ -16,10 +16,9 @@ function Navbar() {
       >
         <div className="container-fluid">
       
-          <a className="navbar-brand " href="#" >
-            <span >Notes</span>
-            <span className=""> App</span>
-          </a>
+          <NavLink className="link" to={"#"} >
+            <span className="notesTitleNav">Notes App</span>
+          </NavLink>
          
           <button
             className="navbar-toggler"
@@ -41,25 +40,23 @@ function Navbar() {
              
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/home">
+                <NavLink className="nav-link" aria-current="page" to={"/home"}>
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/createNotes">
+                <NavLink className="nav-link" to="/createNotes">
                   Create Note
-                </a>
+                </NavLink>
               </li>
            
              
               <li className="nav-item dropdown">
           <img
-            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-            className=" nav-link dropdown-toggle rounded-circle"
-            style={{height :'3rem',width:'3rem'}}
-            alt="Black and White Portrait of a Man"
+            src="https://cdn-icons-png.flaticon.com/512/706/706834.png"
+            className="nav-link dropdown-toggle rounded-circle imageCircle"
+            alt="image"
             loading="lazy"
-            
             id="navbarDarkDropdownMenuLink"
             role="button"
             data-bs-toggle="dropdown"
@@ -67,7 +64,7 @@ function Navbar() {
           />
                
                 <ul
-                  className="dropdown-menu dropdown-menu-dark"
+                  className="dropdown-menu"
                   aria-labelledby="navbarDarkDropdownMenuLink"
                 >
                   <li>
@@ -76,9 +73,9 @@ function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <NavLink className="dropdown-item" to={"/"}>
                       Logout
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
