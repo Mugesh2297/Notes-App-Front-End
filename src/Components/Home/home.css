@@ -4,7 +4,8 @@
 }
 
 .homebody{
-    height: 100vh;
+    height: auto;
+    padding-bottom: 200px;
     width: 100%;
     background: #bdc3c7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */

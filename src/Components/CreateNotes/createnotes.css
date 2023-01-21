@@ -96,6 +96,12 @@ font-family: 'Poppins', sans-serif;
         font-weight: bold;
         box-shadow: 6px 6px 10px black;
      }
+     .main1{
+      height: auto;
+      padding-bottom: 50px;
+      width: 100%;
+      background-color: rgb(229, 229, 229);
+    }
  }
  @media (max-width: 768px) {
     .formArea{
