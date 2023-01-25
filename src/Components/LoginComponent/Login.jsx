@@ -94,8 +94,17 @@ function Login() {
               </div>
             </div>
           </div>
+          <div className="text-center mt-3">
+                <p className="">
+                  <strong>Test Account</strong>: kmugesh297@gmail.com <br />
+                  <strong>password</strong> : Mugesh@22
+                </p>
+
+              </div>
         </div>
+        
       </section>
+      
     </div>
   )
 }

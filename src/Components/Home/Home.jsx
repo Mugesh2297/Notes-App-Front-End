@@ -95,7 +95,8 @@ function Home() {
                  Edited: {format(note.updatedAt)}
 
                   <Link to={`/editnotes/${note._id}`} className="text-light ">
-                  <FontAwesomeIcon icon={faEdit} className="editIcon">Edit</FontAwesomeIcon> 
+                  <FontAwesomeIcon icon={faEdit} className="editIcon" title="edit">Edit</FontAwesomeIcon>
+                   
                   </Link>
                 </div>
                 <button onClick={() => deleteProduct(note._id)} className="bg-transparent btn btn-outline-none text-light position-absolute top-0 end-0" >
